@@ -1,5 +1,10 @@
+const output = document.getElementById("output");
 
-//Primitive Data Types in JavaScript"
+console.log = function (...values) {
+    output.innerHTML += values.join(" ") + "\n";
+};
+
+console.log("Primitive Data Types in JavaScript");
 // Task 1 Create a variable studentName and assign your name. Print its data type.
 
 let studentName = "Hari";
@@ -43,7 +48,7 @@ let batchNumber = 42;
 console.log(typeof batchNumber);
 
 
-//PART 2: ARRAYS"
+console.log("PART 2: ARRAYS");
 
 // Task 9 Create an array containing five fruit names.
 let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
@@ -92,13 +97,13 @@ let programmingLanguages = [
 console.log(programmingLanguages[programmingLanguages.length - 1]);
 
 
-//PART 3: OBJECTS
+console.log("PART 3: OBJECTS");
 
 // Task 19 Create an object student with properties name, age, and city.
 let student = {
-    name: "Hari",
-    age: 23,
-    city: "Salem"
+    name: "John",
+    age: 22,
+    city: "Chennai"
 };
 
 // Task 20 Print the student name using dot notation.
@@ -109,9 +114,9 @@ console.log(student.age);
 
 // Task 22 Create an object named employee with  name, salary, and designation. 
 let employee = {
-    name: "Hari",
-    salary: 42000,
-    designation: "Java Full Stack Developer"
+    name: "David",
+    salary: 30000,
+    designation: "Developer"
 };
 
 // Task 23 Create an object containing an array of five skills. Print the third skill.
@@ -143,7 +148,7 @@ let company = {
 console.log(company);
 
 
-//PART 4: ARITHMETIC OPERATORS
+console.log("PART 4: ARITHMETIC OPERATORS");
 
 // Task 27: Addition
 console.log(10 + 20);
@@ -175,7 +180,7 @@ console.log("Modulus:", num1 % num2);
 console.log("Exponentiation:", num1 ** num2);
 
 
-//PART 5: INCREMENT AND DECREMENT
+console.log("PART 5: INCREMENT AND DECREMENT");
 
 // Task 34: Pre-increment
 let first = 10;
